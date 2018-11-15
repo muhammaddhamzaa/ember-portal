@@ -3207,9 +3207,9 @@ export default Object.extend({
     return false;
   },
 
-  getMetaViewStuff: function(module, item, i18n) {
-    if (this.modules[module]["views"]["record"]["meta"] !== undefined && this.modules[module]["views"]["record"]["meta"][item] !== undefined) {
-      let meta = this.modules[module]["views"]["record"]["meta"][item];
+  getMetaViewStuff: function(module, submodule, item, i18n) {
+    if (this.modules[module]["views"][submodule]["meta"] !== undefined && this.modules[module]["views"][submodule]["meta"][item] !== undefined) {
+      let meta = this.modules[module]["views"][submodule]["meta"][item];
       return meta;
     }
     return false;

@@ -1,0 +1,10 @@
+{{#if (eq metaData.name "panel_header")}}
+  {{#each-in metaData.fields as |field value|}}
+    {{#if (eq field "name")}}
+    <p>
+      {{value}}
+    </p>
+    {{/if}}
+  {{/each-in}}
+{{/if}}
+{{yield}}
