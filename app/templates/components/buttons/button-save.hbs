@@ -1,1 +1,6 @@
+{{#each-in metaData as |module definition|}}
+  {{#if (eq definition.name "save_button") }}
+  <button class={{definition.css_class}}> Enter </button>
+  {{/if}}
+{{/each-in}}
 {{yield}}

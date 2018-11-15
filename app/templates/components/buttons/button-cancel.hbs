@@ -1,6 +1,6 @@
-{{#each-in metaData as |module|}}
-  {{#if (eq module.name "cancel_button") }}
-  <button class={{module.css_class}}> Enter </button>
+{{#each-in metaData as |module definition|}}
+  {{#if (eq definition.name "cancel_button") }}
+  <button class={{definition.css_class}}> Enter </button>
   {{/if}}
 {{/each-in}}
 {{yield}}
