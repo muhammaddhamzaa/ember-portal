@@ -47,5 +47,9 @@ module.exports = function(environment) {
     // here you can enable a production-specific feature
   }
 
+  ENV.i18n = {
+    defaultLocale: 'en'
+  };
+
   return ENV;
 };
