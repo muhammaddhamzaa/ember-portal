@@ -1,6 +1,6 @@
 {{#each-in metaData as |module definition|}}
   {{#if (eq definition.name "save_button") }}
-  <button class={{definition.css_class}}> Save </button>
+  <button class={{definition.css_class}} {{action "changeToLeads"}}> Leads </button>
   {{/if}}
 {{/each-in}}
 {{yield}}

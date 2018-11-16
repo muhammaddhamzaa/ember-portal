@@ -4,6 +4,6 @@ import MD from "../utils/metadata"
 export default Component.extend({
   init: function(){
     this._super(...arguments);
-    this.metaData = MD.create().getMetaViewStuff("Leads", "list", "panels")
+    this.metaData = MD.create().getMetaViewStuff(sessionStorage.getItem('module'), "list", "panels")
   }
 });
