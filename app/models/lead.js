@@ -6,6 +6,7 @@ export default DS.Model.extend({
   "email1": DS.attr('string'),
   "account_name": DS.attr('string'),
   "phone_work": DS.attr('string'),
+  "assigned_user_name": DS.attr('string'),
   "date_entered": DS.attr('string'),
   "date_modified": DS.attr('string')
 });
