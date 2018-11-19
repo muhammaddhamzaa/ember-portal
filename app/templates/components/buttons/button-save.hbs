@@ -1,6 +1,6 @@
 {{#each-in metaData as |module definition|}}
   {{#if (eq definition.name "save_button") }}
-  <button class="btn btn-inverse" {{action "changeToLeads"}}> Leads </button>
+  <a class="btn btn-inverse" {{action "changeToLeads"}}> Leads </a>
   {{/if}}
 {{/each-in}}
 {{yield}}

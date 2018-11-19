@@ -1,0 +1,15 @@
+{{nav-bar}}
+{{#each metaData as |key|}}
+  {{#if (eq key.name "panel_header")}}
+    {{#each key.fields as |field|}}
+    <br />
+      <label>{{field.name}}: </label>
+      <br />
+      {{input type="text" id = field.name }}
+      <br />
+      <br />
+    {{/each}}
+    <button class="btn btn-primary">Submit</button>
+  {{/if}}
+{{/each}}
+{{yield}}
