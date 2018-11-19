@@ -10,6 +10,7 @@ export default Component.extend({
   actions: {
     changeToLeads: function() {
       sessionStorage.setItem('module', "Leads");
+      sessionStorage.setItem('mode', "List");
       window.location.reload(true);
     }
   }

@@ -10,6 +10,7 @@ export default Component.extend({
   actions: {
     changeToAccounts: function() {
       sessionStorage.setItem('module', "Accounts");
+      sessionStorage.setItem('mode', "List");
       window.location.reload(true);
     }
   }

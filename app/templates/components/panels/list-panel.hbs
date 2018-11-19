@@ -1,3 +1,7 @@
 {{nav-bar}}
+{{#if (eq (crud-helper) "Create")}}
+{{panels/create-panel}}
+{{else}}
 {{field-list-headers}}
+{{/if}}
 {{yield}}

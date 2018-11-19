@@ -1,11 +1,17 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-<div class="collapse navbar-collapse">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+  <div class="collapse navbar-collapse">
     <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">{{buttons/button-cancel}}</a>
+      <li class="dropdown">
+        <a class="nav-link" href="#">{{buttons/button-cancel}}<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a class="nav-link" href="#">{{buttons/create-new}}</a></li>
+        </ul>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">{{buttons/button-save}}</a>
+      <li class="dropdown">
+        <a class="nav-link" href="#">{{buttons/button-save}}<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a class="nav-link" href="#">{{buttons/create-new}}</a></li>
+        </ul>
       </li>
     </ul>
   </div>
